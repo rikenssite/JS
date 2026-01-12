@@ -1,13 +1,44 @@
+
+// ****************************************************************************
 // adding two numbers
 
 function addTwoNumbers(num1,num2) {
     return (num1+num2);
 }
 
-const add = addTwoNumbers(3,6)
-console.log(add);
+let add = addTwoNumbers(3,6)
 
-// --------------------------------------
+// ------------------- NO ERROR ---------------------
+
+console.log(addTw(2,5)) 
+// We can use functions before they are declared
+
+function addTw(num1,num2) {
+    return (num1+num2);
+}
+
+// ****************************************************************************
+
+// ****************************************************************************
+// ----------------- NO ERROR -----------------------
+// Creating functions and directly assigning it to a variable as it's name 
+let addTwo = function(num1,num2) {
+    return (num1+num2);
+}
+
+console.log(addTwo())
+console.log(addTwo(1,2))
+
+// ------------------ ERROR ----------------------
+// We cannot use this kind of functions before they are declared
+console.log(addThree(1,2,5)) 
+
+
+let addThree = function(num1,num2,num3) {
+    return (num1+num2,num3);
+}
+
+// ****************************************************************************
 
 //  SCOPES
 
@@ -25,4 +56,3 @@ if(true){
 
 console.log("outer a is ",a)
 console.log("outer b is ",b)
-
