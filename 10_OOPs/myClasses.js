@@ -1,3 +1,4 @@
+//  Actually creating classes and consctructors
 class User {
   constructor(username, email, password) {
     this.username = username;
