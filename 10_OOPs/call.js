@@ -1,5 +1,5 @@
+// Making function talk to each other after 'call'
 // We use 'call' if we want to use whole logic of other function
-
 function setUserProperties(userName, userEmail, userPassword) {
   // User-provided properties
   this.username = userName.trim();
